@@ -53,6 +53,7 @@ const Contact = () => {
     payload.append("_subject", "Nova mensagem pelo site Timberhack");
     payload.append("_template", "table");
     payload.append("_captcha", "false");
+    payload.append("_honey", String(fd.get("_honey") || ""));
     payload.append("_replyto", parsed.data.email);
 
     setLoading(true);
@@ -140,6 +141,14 @@ const Contact = () => {
             onSubmit={onSubmit}
             className="lg:col-span-7 bg-card border border-border rounded-3xl p-8 md:p-10 shadow-soft"
           >
+            <input
+              type="text"
+              name="_honey"
+              tabIndex={-1}
+              autoComplete="off"
+              aria-hidden="true"
+              className="hidden"
+            />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div>
                 <label className="text-xs font-semibold text-foreground mb-2 block">
