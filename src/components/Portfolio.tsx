@@ -151,7 +151,7 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:auto-rows-[260px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[260px]">
           {projects.map((p) => (
             <button
               key={p.name}
