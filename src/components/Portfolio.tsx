@@ -201,7 +201,7 @@ const Portfolio = () => {
           onClick={close}
         >
           <div
-            className="relative max-w-3xl w-full bg-card rounded-3xl overflow-hidden shadow-card"
+            className="relative max-w-3xl w-full max-h-[90vh] bg-card rounded-3xl overflow-hidden shadow-card flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -212,7 +212,7 @@ const Portfolio = () => {
               <X className="h-4 w-4" />
             </button>
 
-            <div className="relative h-72 md:h-96 bg-muted overflow-hidden">
+            <div className="relative h-72 md:h-80 bg-muted overflow-hidden shrink-0">
               <img
                 key={currentImage}
                 src={currentImage}
@@ -258,7 +258,7 @@ const Portfolio = () => {
               )}
             </div>
 
-            <div className="p-8 md:p-10">
+            <div className="p-8 md:p-10 overflow-y-auto">
               <span className="px-3 py-1 text-xs font-medium rounded-full bg-accent text-accent-foreground">
                 {active.type}
               </span>
