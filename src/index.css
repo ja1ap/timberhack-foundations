@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Timberhack Design System
+   Brand: structural engineering for mass timber
+   Primary purple from logo, deep dark canvas, warm timber accents.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 20% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 20% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 20% 8%;
+
+    /* Brand purple from logo */
+    --primary: 252 78% 62%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 256 92% 74%;
+    --primary-deep: 252 70% 48%;
+
+    --secondary: 240 10% 96%;
+    --secondary-foreground: 240 20% 12%;
+
+    --muted: 240 10% 96%;
+    --muted-foreground: 240 6% 42%;
+
+    --accent: 252 78% 96%;
+    --accent-foreground: 252 78% 35%;
+
+    /* Warm timber tone for hint accents */
+    --timber: 28 45% 55%;
+    --timber-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 8% 90%;
+    --input: 240 8% 90%;
+    --ring: 252 78% 62%;
+
+    --radius: 0.75rem;
+
+    /* Surfaces */
+    --surface: 240 20% 99%;
+    --surface-dark: 240 25% 8%;
+    --surface-darker: 240 30% 5%;
+
+    /* Gradients */
+    --gradient-brand: linear-gradient(135deg, hsl(252 78% 62%), hsl(268 82% 58%));
+    --gradient-radial: radial-gradient(ellipse at top, hsl(252 78% 62% / 0.18), transparent 60%);
+    --gradient-dark: linear-gradient(180deg, hsl(240 30% 5%), hsl(240 25% 9%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -8px hsl(240 30% 10% / 0.08);
+    --shadow-card: 0 8px 30px -12px hsl(240 30% 10% / 0.12);
+    --shadow-brand: 0 20px 60px -20px hsl(252 78% 62% / 0.45);
+
+    /* Motion */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 30% 5%;
+    --foreground: 0 0% 98%;
+    --card: 240 25% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 25% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 256 92% 74%;
+    --primary-foreground: 240 30% 5%;
+    --secondary: 240 20% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 20% 12%;
+    --muted-foreground: 240 6% 65%;
+    --accent: 252 78% 20%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 20% 14%;
+    --input: 240 20% 14%;
+    --ring: 252 78% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .gradient-brand {
+    background: var(--gradient-brand);
+  }
+  .gradient-text {
+    background: var(--gradient-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .surface-dark {
+    background: hsl(var(--surface-dark));
+  }
+  .surface-darker {
+    background: hsl(var(--surface-darker));
+  }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+  .shadow-brand { box-shadow: var(--shadow-brand); }
+  .ease-expo {
+    transition-timing-function: var(--ease-out-expo);
+  }
+  .grain::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fade-up 0.8s var(--ease-out-expo) both;
+}
