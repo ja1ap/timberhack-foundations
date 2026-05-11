@@ -2,13 +2,15 @@ import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import { Menu, X } from "lucide-react";
 
+const base = import.meta.env.BASE_URL;
+
 const links = [
-  { label: "Vantagens", href: "/#vantagens" },
-  { label: "Serviços", href: "/#servicos" },
-  { label: "Portfólio", href: "/#portfolio" },
-  { label: "Diferenciais", href: "/#diferenciais" },
-  { label: "Sobre", href: "/#sobre" },
-  { label: "Conteúdo", href: "/#conteudo" },
+  { label: "Vantagens", href: `${base}#vantagens` },
+  { label: "Serviços", href: `${base}#servicos` },
+  { label: "Portfólio", href: `${base}#portfolio` },
+  { label: "Diferenciais", href: `${base}#diferenciais` },
+  { label: "Sobre", href: `${base}#sobre` },
+  { label: "Conteúdo", href: `${base}#conteudo` },
 ];
 
 const Navbar = () => {
@@ -29,7 +31,7 @@ const Navbar = () => {
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between py-4">
-        <a href="/#top" className="flex items-center gap-2">
+        <a href={`${base}#top`} className="flex items-center gap-2">
           <Logo className="h-5 md:h-6 w-auto" />
         </a>
         <ul className="hidden lg:flex items-center gap-1">
@@ -50,7 +52,7 @@ const Navbar = () => {
         </ul>
         <div className="hidden lg:block">
           <a
-            href="/#contato"
+            href={`${base}#contato`}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary-deep transition-colors shadow-soft"
           >
             Fale com a gente
@@ -80,7 +82,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="/#contato"
+              href={`${base}#contato`}
               onClick={() => setOpen(false)}
               className="mt-2 mx-4 px-5 py-3 rounded-full bg-primary text-primary-foreground text-center font-semibold"
             >

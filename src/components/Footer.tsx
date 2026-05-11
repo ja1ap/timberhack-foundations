@@ -1,5 +1,7 @@
 import Logo from "./Logo";
 
+const base = import.meta.env.BASE_URL;
+
 const Footer = () => (
   <footer className="surface-darker text-white/70 pt-20 pb-10">
     <div className="container mx-auto">
@@ -17,22 +19,22 @@ const Footer = () => (
           </div>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/#vantagens" className="hover:text-white transition-colors">
+              <a href={`${base}#vantagens`} className="hover:text-white transition-colors">
                 Vantagens
               </a>
             </li>
             <li>
-              <a href="/#servicos" className="hover:text-white transition-colors">
+              <a href={`${base}#servicos`} className="hover:text-white transition-colors">
                 Serviços
               </a>
             </li>
             <li>
-              <a href="/#portfolio" className="hover:text-white transition-colors">
+              <a href={`${base}#portfolio`} className="hover:text-white transition-colors">
                 Portfólio
               </a>
             </li>
             <li>
-              <a href="/#sobre" className="hover:text-white transition-colors">
+              <a href={`${base}#sobre`} className="hover:text-white transition-colors">
                 Sobre
               </a>
             </li>
