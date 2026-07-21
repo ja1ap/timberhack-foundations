@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { X, MapPin, Ruler, Calendar, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, MapPin, Ruler, ChevronLeft, ChevronRight } from "lucide-react";
 import p1 from "@/assets/project-1.jpg";
 import p2 from "@/assets/project-2.jpg";
 import p3 from "@/assets/project-3.jpg";
@@ -13,7 +13,6 @@ type Project = {
   type: "Residencial" | "Comercial" | "Público" | "Industrial";
   area: string;
   location: string;
-  year: string;
   desc: string;
   span?: string;
 };
@@ -26,7 +25,6 @@ const projects: Project[] = [
     type: "Residencial",
     area: "3.200 m²",
     location: "Curitiba, PR",
-    year: "2024",
     desc: "Edifício residencial de 5 pavimentos em estrutura híbrida CLT-glulam, com fachada ventilada em madeira termotratada.",
     span: "md:col-span-2 md:row-span-2",
   },
@@ -36,7 +34,6 @@ const projects: Project[] = [
     type: "Comercial",
     area: "8.450 m²",
     location: "São Paulo, SP",
-    year: "2023",
     desc: "Sede de 7 andares com sistema híbrido madeira-concreto, vencendo vãos de 12m com vigas glulam protendidas.",
   },
   {
@@ -45,7 +42,6 @@ const projects: Project[] = [
     type: "Público",
     area: "1.850 m²",
     location: "São Paulo, SP",
-    year: "2024",
     desc: "Cobertura em arcos glulam de grande vão livre (28m), expressão estrutural integrada à arquitetura.",
   },
   {
@@ -54,7 +50,6 @@ const projects: Project[] = [
     type: "Público",
     area: "2.700 m²",
     location: "Atibaia, SP",
-    year: "2023",
     desc: "Complexo educacional em CLT com pré-fabricação total, executado em 6 meses de obra.",
     span: "md:col-span-2",
   },
@@ -64,7 +59,6 @@ const projects: Project[] = [
     type: "Residencial",
     area: "680 m²",
     location: "Campos do Jordão, SP",
-    year: "2025",
     desc: "Residência em pórticos glulam com balanços de 6m, integração radical com a topografia.",
   },
   {
@@ -73,7 +67,6 @@ const projects: Project[] = [
     type: "Industrial",
     area: "12.000 m²",
     location: "Tarumã, SP",
-    year: "2024",
     desc: "Treliças em glulam vencendo 30m de vão livre, alternativa de baixo carbono ao aço estrutural.",
   },
 ];
@@ -268,7 +261,7 @@ const Portfolio = () => {
               <p className="mt-4 text-muted-foreground leading-relaxed">
                 {active.desc}
               </p>
-              <div className="mt-6 grid grid-cols-3 gap-4 pt-6 border-t border-border">
+              <div className="mt-6 grid grid-cols-2 gap-4 pt-6 border-t border-border">
                 <div>
                   <div className="text-xs text-muted-foreground mb-1 inline-flex items-center gap-1.5">
                     <Ruler className="h-3.5 w-3.5" /> Área
@@ -282,12 +275,6 @@ const Portfolio = () => {
                   <div className="font-display font-semibold">
                     {active.location}
                   </div>
-                </div>
-                <div>
-                  <div className="text-xs text-muted-foreground mb-1 inline-flex items-center gap-1.5">
-                    <Calendar className="h-3.5 w-3.5" /> Ano
-                  </div>
-                  <div className="font-display font-semibold">{active.year}</div>
                 </div>
               </div>
             </div>
