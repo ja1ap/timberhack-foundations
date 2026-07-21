@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, MapPin, Send } from "lucide-react";
+import { MapPin, Send } from "lucide-react";
 import { z } from "zod";
 import { toast } from "sonner";
 
@@ -79,8 +79,8 @@ const Contact = () => {
       if (String(result.success) === "false") {
         toast.error(
           result.message?.includes("Activation")
-            ? "Formulário aguardando ativação. Verifique o e-mail murilo.negreli@gmail.com."
-            : "Não foi possível enviar agora. Tente novamente ou envie um e-mail direto.",
+            ? "Formulário aguardando ativação. Tente novamente mais tarde."
+            : "Não foi possível enviar agora. Tente novamente em instantes.",
         );
         return;
       }
@@ -89,7 +89,7 @@ const Contact = () => {
       form.reset();
     } catch {
       toast.error(
-        "Não foi possível enviar agora. Tente novamente ou envie um e-mail direto.",
+        "Não foi possível enviar agora. Tente novamente em instantes.",
       );
     } finally {
       setLoading(false);
@@ -113,18 +113,6 @@ const Contact = () => {
             </p>
 
             <div className="mt-10 space-y-5">
-              <a
-                href={`mailto:${CONTACT_EMAIL}`}
-                className="flex items-center gap-4 group"
-              >
-                <div className="h-11 w-11 rounded-xl bg-accent text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  <Mail className="h-4 w-4" />
-                </div>
-                <div>
-                  <div className="text-xs text-muted-foreground">E-mail</div>
-                  <div className="font-medium">{CONTACT_EMAIL}</div>
-                </div>
-              </a>
               <div className="flex items-center gap-4">
                 <div className="h-11 w-11 rounded-xl bg-accent text-primary flex items-center justify-center">
                   <MapPin className="h-4 w-4" />

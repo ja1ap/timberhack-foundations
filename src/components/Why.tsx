@@ -9,7 +9,7 @@ const stats = [
   },
   {
     icon: Clock,
-    metric: "−40%",
+    metric: "−50%",
     title: "Tempo de obra",
     desc: "Pré-fabricação industrial reduz prazos de execução comparado a sistemas convencionais.",
   },

@@ -46,14 +46,6 @@ const Footer = () => (
           </div>
           <ul className="space-y-2 text-sm">
             <li>São Paulo, Brasil</li>
-            <li>
-              <a
-                href="mailto:murilo.negreli@gmail.com"
-                className="hover:text-white transition-colors"
-              >
-                murilo.negreli@gmail.com
-              </a>
-            </li>
           </ul>
         </div>
       </div>

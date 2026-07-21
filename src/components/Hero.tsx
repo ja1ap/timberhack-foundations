@@ -49,7 +49,7 @@ const Hero = () => (
         {[
           { k: "+120", v: "Projetos estruturais" },
           { k: "85k m²", v: "Área construída" },
-          { k: "−50%", v: "CO₂ vs concreto" },
+          { k: "−40%", v: "CO₂ vs concreto" },
           { k: "EC5 + NBR", v: "Conformidade total" },
         ].map((s) => (
           <div key={s.v} className="bg-surface-darker/80 p-6">
