@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { MapPin, Send } from "lucide-react";
+import WhatsAppIcon from "./WhatsAppIcon";
 import { z } from "zod";
 import { toast } from "sonner";
 
@@ -97,22 +98,32 @@ const Contact = () => {
   };
 
   return (
-    <section id="contato" className="py-24 md:py-36 bg-background">
+    <section id="contato" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           <div className="lg:col-span-5">
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               07 - Contato
             </span>
-            <h2 className="mt-4 font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-balance leading-[1.05]">
+            <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-balance leading-[1.05]">
               Vamos projetar a próxima estrutura.
             </h2>
-            <p className="mt-6 text-lg text-muted-foreground">
+            <p className="mt-6 text-base text-muted-foreground">
               Conte sobre seu projeto. Respondemos em até 1 dia útil com uma
               avaliação técnica preliminar.
             </p>
 
             <div className="mt-10 space-y-5">
+              {/* Número provisório — trocar pelo WhatsApp Business quando estiver ativo */}
+              <div className="flex items-center gap-4">
+                <div className="h-11 w-11 rounded-xl bg-accent text-primary flex items-center justify-center">
+                  <WhatsAppIcon className="h-4 w-4" />
+                </div>
+                <div>
+                  <div className="text-xs text-muted-foreground">WhatsApp</div>
+                  <div className="font-medium">+55 (11) 99999-9999</div>
+                </div>
+              </div>
               <div className="flex items-center gap-4">
                 <div className="h-11 w-11 rounded-xl bg-accent text-primary flex items-center justify-center">
                   <MapPin className="h-4 w-4" />

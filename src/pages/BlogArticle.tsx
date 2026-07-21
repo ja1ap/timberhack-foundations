@@ -25,7 +25,7 @@ const BlogArticle = () => {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               Conteúdo técnico
             </span>
-            <h1 className="mt-4 font-display text-4xl md:text-6xl font-semibold leading-tight">
+            <h1 className="mt-4 font-display text-3xl md:text-5xl font-semibold leading-tight">
               Artigo não encontrado.
             </h1>
             <p className="mt-5 text-muted-foreground leading-relaxed">
@@ -78,10 +78,10 @@ const BlogArticle = () => {
                   <Clock className="h-3.5 w-3.5" /> {article.readTime}
                 </span>
               </div>
-              <h1 className="mt-6 font-display text-4xl md:text-6xl lg:text-7xl font-semibold text-white leading-[1.02] text-balance">
+              <h1 className="mt-6 font-display text-3xl md:text-5xl lg:text-6xl font-semibold text-white leading-[1.02] text-balance">
                 {article.title}
               </h1>
-              <p className="mt-6 max-w-2xl text-lg text-white/70 leading-relaxed">
+              <p className="mt-6 max-w-2xl text-base text-white/70 leading-relaxed">
                 {article.excerpt}
               </p>
             </div>
@@ -107,10 +107,10 @@ const BlogArticle = () => {
               <div className="space-y-12">
                 {article.body.map((section) => (
                   <section key={section.heading}>
-                    <h2 className="font-display text-3xl md:text-4xl font-semibold leading-tight">
+                    <h2 className="font-display text-2xl md:text-3xl font-semibold leading-tight">
                       {section.heading}
                     </h2>
-                    <div className="mt-5 space-y-5 text-lg leading-relaxed text-foreground/75">
+                    <div className="mt-5 space-y-5 text-base leading-relaxed text-foreground/75">
                       {section.paragraphs.map((paragraph) => (
                         <p key={paragraph}>{paragraph}</p>
                       ))}

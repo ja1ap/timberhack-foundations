@@ -32,10 +32,10 @@ const Blog = () => {
               <Newspaper className="h-3.5 w-3.5 text-primary-glow" />
               Conteúdo técnico Timberhack
             </span>
-            <h1 className="mt-8 font-display text-5xl md:text-7xl font-semibold text-white leading-[0.98] text-balance">
+            <h1 className="mt-8 font-display text-4xl md:text-6xl font-semibold text-white leading-[0.98] text-balance">
               Biblioteca técnica para construir melhor em madeira.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg text-white/70 leading-relaxed">
+            <p className="mt-6 max-w-2xl text-base text-white/70 leading-relaxed">
               Artigos sobre normas, sistemas estruturais, custo total,
               desempenho e decisões de projeto em madeira engenheirada.
             </p>
@@ -70,7 +70,7 @@ const Blog = () => {
                     <Clock className="h-3.5 w-3.5" /> {featured.readTime}
                   </span>
                 </div>
-                <h2 className="mt-5 font-display text-3xl md:text-4xl font-semibold leading-tight group-hover:text-primary transition-colors">
+                <h2 className="mt-5 font-display text-2xl md:text-3xl font-semibold leading-tight group-hover:text-primary transition-colors">
                   {featured.title}
                 </h2>
                 <p className="mt-4 text-muted-foreground leading-relaxed">
@@ -87,7 +87,7 @@ const Blog = () => {
                 <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
                   Publicações recentes
                 </span>
-                <h2 className="mt-3 font-display text-3xl md:text-4xl font-semibold leading-tight">
+                <h2 className="mt-3 font-display text-2xl md:text-3xl font-semibold leading-tight">
                   Escolha o próximo texto.
                 </h2>
               </div>
@@ -133,7 +133,7 @@ const Blog = () => {
                 <span className="text-xs font-medium text-primary">
                   {article.category}
                 </span>
-                <h3 className="mt-3 font-display text-2xl font-semibold leading-tight group-hover:text-primary transition-colors">
+                <h3 className="mt-3 font-display text-xl font-semibold leading-tight group-hover:text-primary transition-colors">
                   {article.title}
                 </h3>
                 <p className="mt-3 text-sm text-muted-foreground leading-relaxed">

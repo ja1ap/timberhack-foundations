@@ -28,18 +28,18 @@ const stats = [
 ];
 
 const Why = () => (
-  <section id="vantagens" className="py-24 md:py-36 bg-background">
+  <section id="vantagens" className="py-16 md:py-24 bg-background">
     <div className="container mx-auto">
-      <div className="max-w-3xl mb-16">
+      <div className="max-w-3xl mb-10">
         <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
           01 — Por quê
         </span>
-        <h2 className="mt-4 font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground text-balance leading-[1.05]">
+        <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground text-balance leading-[1.05]">
           Por que madeira estrutural?
         </h2>
-        <p className="mt-6 text-lg text-muted-foreground max-w-2xl">
-          Mais que estética — performance estrutural mensurável, ciclo de vida
-          regenerativo e velocidade de execução compatível com o mercado moderno.
+        <p className="mt-6 text-base text-muted-foreground max-w-2xl">
+          Desempenho estrutural, sustentabilidade, industrialização e rapidez
+          construtiva em um único sistema.
         </p>
       </div>
 
@@ -53,7 +53,7 @@ const Why = () => (
               <div className="h-12 w-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                 <s.icon className="h-5 w-5" />
               </div>
-              <div className="font-display text-3xl font-semibold gradient-text">
+              <div className="font-display text-2xl font-semibold gradient-text">
                 {s.metric}
               </div>
             </div>

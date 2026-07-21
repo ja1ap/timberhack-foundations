@@ -1,7 +1,7 @@
 import teamImg from "@/assets/team.jpg";
 
 const About = () => (
-  <section id="sobre" className="py-24 md:py-36 bg-background">
+  <section id="sobre" className="py-16 md:py-24 bg-background">
     <div className="container mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         <div className="lg:col-span-5 relative">
@@ -14,7 +14,7 @@ const About = () => (
             />
           </div>
           <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground rounded-2xl p-6 shadow-brand max-w-[220px] hidden md:block">
-            <div className="font-display text-3xl font-semibold">2019</div>
+            <div className="font-display text-2xl font-semibold">2019</div>
             <div className="text-xs mt-1 text-primary-foreground/80">
               Fundada por engenheiros estruturais formados em Viena e São Paulo
             </div>
@@ -25,10 +25,10 @@ const About = () => (
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             05 — Sobre a Timberhack
           </span>
-          <h2 className="mt-4 font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-balance leading-[1.05]">
+          <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-balance leading-[1.05]">
             Engenharia, floresta e código.
           </h2>
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+          <p className="mt-6 text-base text-muted-foreground leading-relaxed">
             Nascemos da convicção de que a próxima geração de edificações
             brasileiras será construída em madeira engenheirada — não por
             tendência, mas por evidência técnica e ambiental.
@@ -42,7 +42,7 @@ const About = () => (
 
           <div className="mt-10 grid grid-cols-3 gap-6 pt-8 border-t border-border">
             <div>
-              <div className="font-display text-3xl font-semibold gradient-text">
+              <div className="font-display text-2xl font-semibold gradient-text">
                 12
               </div>
               <div className="text-xs text-muted-foreground mt-1">
@@ -50,7 +50,7 @@ const About = () => (
               </div>
             </div>
             <div>
-              <div className="font-display text-3xl font-semibold gradient-text">
+              <div className="font-display text-2xl font-semibold gradient-text">
                 6
               </div>
               <div className="text-xs text-muted-foreground mt-1">
@@ -58,7 +58,7 @@ const About = () => (
               </div>
             </div>
             <div>
-              <div className="font-display text-3xl font-semibold gradient-text">
+              <div className="font-display text-2xl font-semibold gradient-text">
                 100%
               </div>
               <div className="text-xs text-muted-foreground mt-1">

@@ -151,14 +151,14 @@ const Portfolio = () => {
   }, [active]);
 
   return (
-    <section id="portfolio" className="py-24 md:py-36 bg-background">
+    <section id="portfolio" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-10">
           <div className="max-w-2xl">
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               03 — Portfólio
             </span>
-            <h2 className="mt-4 font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-balance leading-[1.05]">
+            <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-balance leading-[1.05]">
               Projetos que demonstram o estado da arte.
             </h2>
           </div>
@@ -195,7 +195,7 @@ const Portfolio = () => {
                 )}
               </div>
               <div className="absolute inset-x-0 bottom-0 p-6 text-white">
-                <h3 className="font-display text-xl md:text-2xl font-semibold">
+                <h3 className="font-display text-lg md:text-xl font-semibold">
                   {p.name}
                 </h3>
                 <div className="mt-2 flex items-center gap-4 text-xs text-white/80">
@@ -279,7 +279,7 @@ const Portfolio = () => {
               <span className="px-3 py-1 text-xs font-medium rounded-full bg-accent text-accent-foreground">
                 {active.type}
               </span>
-              <h3 className="mt-4 font-display text-3xl font-semibold">
+              <h3 className="mt-4 font-display text-2xl font-semibold">
                 {active.name}
               </h3>
               <p className="mt-4 text-muted-foreground leading-relaxed whitespace-pre-line">

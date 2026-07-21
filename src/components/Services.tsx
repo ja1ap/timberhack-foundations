@@ -28,14 +28,14 @@ const services = [
 ];
 
 const Services = () => (
-  <section id="servicos" className="py-24 md:py-36 bg-secondary/40">
+  <section id="servicos" className="py-16 md:py-24 bg-secondary/40">
     <div className="container mx-auto">
-      <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
+      <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-10">
         <div className="max-w-2xl">
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             02 — Serviços
           </span>
-          <h2 className="mt-4 font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-balance leading-[1.05]">
+          <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-balance leading-[1.05]">
             Engenharia ponta a ponta para madeira engenheirada.
           </h2>
         </div>
@@ -50,7 +50,7 @@ const Services = () => (
         {services.map((s) => (
           <article
             key={s.title}
-            className="group relative bg-card border border-border rounded-2xl p-8 lg:p-10 hover:border-primary/40 hover:shadow-card transition-all duration-500 ease-expo"
+            className="group relative bg-card border border-border rounded-2xl p-6 lg:p-8 hover:border-primary/40 hover:shadow-card transition-all duration-500 ease-expo"
           >
             <div className="flex items-start justify-between mb-8">
               <div className="h-12 w-12 rounded-xl bg-accent text-primary flex items-center justify-center">
@@ -58,7 +58,7 @@ const Services = () => (
               </div>
               <ArrowUpRight className="h-5 w-5 text-muted-foreground group-hover:text-primary group-hover:rotate-12 transition-transform" />
             </div>
-            <h3 className="font-display text-2xl font-semibold mb-3">
+            <h3 className="font-display text-xl font-semibold mb-3">
               {s.title}
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-6">

@@ -3,14 +3,14 @@ import { ArrowUpRight } from "lucide-react";
 import { featuredArticles } from "@/data/articles";
 
 const Content = () => (
-  <section id="conteudo" className="py-24 md:py-36 bg-secondary/40">
+  <section id="conteudo" className="py-16 md:py-24 bg-secondary/40">
     <div className="container mx-auto">
-      <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
+      <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-10">
         <div className="max-w-2xl">
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             06 - Conteúdo técnico
           </span>
-          <h2 className="mt-4 font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-balance leading-[1.05]">
+          <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-balance leading-[1.05]">
             Conhecimento em circulação aberta.
           </h2>
         </div>
@@ -47,7 +47,7 @@ const Content = () => (
               <div className="mb-5 text-xs text-muted-foreground">
                 {article.date} · {article.readTime}
               </div>
-              <h3 className="font-display text-xl md:text-2xl font-semibold leading-tight mb-4 group-hover:text-primary transition-colors">
+              <h3 className="font-display text-lg md:text-xl font-semibold leading-tight mb-4 group-hover:text-primary transition-colors">
                 {article.title}
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">

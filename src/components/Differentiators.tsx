@@ -10,17 +10,17 @@ const items = [
 ];
 
 const Differentiators = () => (
-  <section id="diferenciais" className="relative py-24 md:py-36 surface-darker text-white overflow-hidden">
+  <section id="diferenciais" className="relative py-16 md:py-24 surface-darker text-white overflow-hidden">
     <div className="absolute inset-0" style={{ background: "var(--gradient-radial)" }} />
     <div className="relative container mx-auto">
-      <div className="max-w-3xl mb-16">
+      <div className="max-w-3xl mb-10">
         <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-glow">
           04 — Diferenciais técnicos
         </span>
-        <h2 className="mt-4 font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-balance leading-[1.05]">
+        <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-balance leading-[1.05]">
           Stack técnico de padrão internacional.
         </h2>
-        <p className="mt-6 text-lg text-white/70 max-w-2xl">
+        <p className="mt-6 text-base text-white/70 max-w-2xl">
           Combinamos as melhores ferramentas de cálculo, modelagem e
           normatização para entregar projetos auditáveis e construíveis.
         </p>
