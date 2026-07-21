@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import WhatsAppIcon from "./WhatsAppIcon";
 
-// Número do WhatsApp Business em formato internacional, apenas dígitos
-// (ex.: "5541999999999"). Enquanto estiver vazio, o botão leva à seção
-// de contato; ao preencher, passa a abrir a conversa no WhatsApp.
+// Número definitivo: 5511940453613 — o WhatsApp da linha ainda não foi
+// ativado, então a constante fica vazia e o botão leva à seção de contato.
+// Assim que ativar, preencher com "5511940453613" para abrir a conversa.
 const WHATSAPP_NUMBER = "";
 const WHATSAPP_MESSAGE =
   "Olá! Vim pelo site da Timberhack e gostaria de falar sobre um projeto.";

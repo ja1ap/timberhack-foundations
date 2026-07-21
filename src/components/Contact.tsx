@@ -114,14 +114,14 @@ const Contact = () => {
             </p>
 
             <div className="mt-10 space-y-5">
-              {/* Número provisório — trocar pelo WhatsApp Business quando estiver ativo */}
+              {/* Número definitivo; quando o WhatsApp for ativado, transformar em link wa.me/5511940453613 */}
               <div className="flex items-center gap-4">
                 <div className="h-11 w-11 rounded-xl bg-accent text-primary flex items-center justify-center">
                   <WhatsAppIcon className="h-4 w-4" />
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground">WhatsApp</div>
-                  <div className="font-medium">+55 (11) 99999-9999</div>
+                  <div className="font-medium">+55 (11) 94045-3613</div>
                 </div>
               </div>
               <div className="flex items-center gap-4">
