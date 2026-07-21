@@ -1,12 +1,12 @@
 import { Cpu, Layers3, BookCheck, Globe2, Workflow, Flame } from "lucide-react";
 
 const items = [
-  { icon: Cpu, title: "RFEM 6", desc: "Análise estrutural avançada com módulos específicos para madeira." },
-  { icon: Layers3, title: "BIM / Revit", desc: "Modelagem federada com integração à fabricação CNC." },
-  { icon: BookCheck, title: "Eurocode 5", desc: "Dimensionamento conforme EN 1995, incluindo EC5 fogo." },
-  { icon: Globe2, title: "NBR 7190-1:2022", desc: "Conformidade total com a norma brasileira atualizada." },
-  { icon: Workflow, title: "Pré-fabricação", desc: "Detalhamento para corte CNC e logística de montagem." },
-  { icon: Flame, title: "Resistência ao fogo", desc: "Verificação de seções carbonizadas (REI 60/90/120)." },
+  { icon: Cpu, title: "RFEM", desc: "Análise estrutural avançada com módulos específicos para madeira." },
+  { icon: Layers3, title: "BIM / Revit", desc: "Modelagem integrada em BIM, garantindo compatibilização entre disciplinas, precisão e redução de interferências." },
+  { icon: BookCheck, title: "Eurocode 5", desc: "Dimensionamento estrutural conforme a EN 1995, referência europeia para o projeto de estruturas de madeira." },
+  { icon: Globe2, title: "NBR 7190 1:2022", desc: "Conformidade total com a norma brasileira atualizada." },
+  { icon: Workflow, title: "Pré-fabricação", desc: "Modelagem executiva preparada para a industrialização, compatível com os processos de fabricação digital e montagem em obra." },
+  { icon: Flame, title: "Resistência ao fogo", desc: "Verificação de seções carbonizadas." },
 ];
 
 const Differentiators = () => (

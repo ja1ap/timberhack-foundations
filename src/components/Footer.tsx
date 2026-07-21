@@ -62,7 +62,7 @@ const Footer = () => (
           © {new Date().getFullYear()} Timberhack - Engenharia em madeira
           estrutural.
         </div>
-        <div>CREA · ABNT NBR 7190-1:2022 · Eurocode 5</div>
+        <div>CREA · ABNT NBR 7190 1:2022 · Eurocode 5</div>
       </div>
     </div>
   </footer>

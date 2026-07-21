@@ -17,14 +17,15 @@ const Hero = () => (
       <div className="max-w-4xl animate-fade-up">
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md text-xs font-medium text-white/80 mb-8">
           <span className="h-1.5 w-1.5 rounded-full bg-primary-glow animate-pulse" />
-          Engenharia estrutural em madeira engenheirada
+          Engenharia estrutural em madeira
         </div>
         <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold text-white text-balance leading-[0.95]">
           Estruturas que <span className="gradient-text">crescem</span> em florestas.
         </h1>
         <p className="mt-8 text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed">
-          Projetamos edificações em CLT, glulam e sistemas em madeira engenheirada
-          com performance estrutural certificada e responsabilidade ambiental
+          Projetamos edificações em madeira: madeira engenheirada, madeira
+          roliça e madeira nativa, com alto desempenho estrutural, garantindo
+          previsibilidade de custos, rapidez na execução e impacto ambiental
           mensurável.
         </p>
         <div className="mt-10 flex flex-wrap gap-4">
@@ -48,7 +49,7 @@ const Hero = () => (
         {[
           { k: "+120", v: "Projetos estruturais" },
           { k: "85k m²", v: "Área construída" },
-          { k: "−40%", v: "CO₂ vs concreto" },
+          { k: "−50%", v: "CO₂ vs concreto" },
           { k: "EC5 + NBR", v: "Conformidade total" },
         ].map((s) => (
           <div key={s.v} className="bg-surface-darker/80 p-6">

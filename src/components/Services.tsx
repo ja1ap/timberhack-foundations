@@ -3,15 +3,9 @@ import { Boxes, Building2, FileCheck2, Compass, ArrowUpRight } from "lucide-reac
 const services = [
   {
     icon: Building2,
-    title: "Projeto estrutural CLT & Glulam",
-    desc: "Concepção e dimensionamento completo de sistemas em madeira laminada cruzada e madeira lamelada colada para edificações de múltiplos pavimentos.",
-    tags: ["CLT", "Glulam", "LVL"],
-  },
-  {
-    icon: Boxes,
-    title: "Modelagem BIM",
-    desc: "Modelos federados em Revit com nível de detalhamento LOD 350-400, integrando arquitetura, MEP e fabricação CNC.",
-    tags: ["Revit", "IFC", "LOD 400"],
+    title: "Projeto estrutural em Madeira",
+    desc: "Concepção e dimensionamento completo de sistemas em madeira laminada cruzada e madeira laminada colada para edificações de múltiplos pavimentos.",
+    tags: ["CLT", "MLC", "LVL"],
   },
   {
     icon: Compass,
@@ -20,9 +14,15 @@ const services = [
     tags: ["Viabilidade", "Obra"],
   },
   {
+    icon: Boxes,
+    title: "Modelagem BIM",
+    desc: "Modelos em Revit com nível de detalhamento LOD 350-400, integrando arquitetura e fabricação.",
+    tags: ["Revit", "IFC", "LOD 400"],
+  },
+  {
     icon: FileCheck2,
     title: "Conformidade normativa",
-    desc: "Verificação e memorial de cálculo segundo Eurocode 5, NBR 7190-1:2022, requisitos de resistência ao fogo e desempenho sísmico.",
+    desc: "Verificação e memorial de cálculo segundo Eurocode 5, NBR 7190 1:2022, requisitos de resistência ao fogo e desempenho estrutural.",
     tags: ["EC5", "NBR 7190"],
   },
 ];
@@ -40,8 +40,9 @@ const Services = () => (
           </h2>
         </div>
         <p className="text-muted-foreground max-w-md">
-          Do estudo preliminar à entrega da obra, com rigor técnico e
-          documentação completa para aprovação em qualquer praça.
+          Desenvolvemos todas as etapas do projeto, do estudo preliminar ao
+          projeto executivo, com precisão técnica, compatibilização e
+          documentação completa para a obra.
         </p>
       </div>
 
