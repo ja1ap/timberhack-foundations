@@ -4,8 +4,10 @@ import WhatsAppIcon from "./WhatsAppIcon";
 import { z } from "zod";
 import { toast } from "sonner";
 
-const CONTACT_EMAIL = "murilo.negreli@gmail.com";
-const FORMSUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
+// Identificador mascarado do FormSubmit: entrega no e-mail cadastrado no
+// painel sem expor o endereço no código publicado.
+const FORMSUBMIT_ENDPOINT =
+  "https://formsubmit.co/ajax/a2b47d7e2dd4a46587d79b0f2027d4b3";
 
 const schema = z.object({
   name: z.string().trim().min(2, "Informe seu nome").max(100),
