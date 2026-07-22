@@ -15,7 +15,8 @@ const spaFallback = () => ({
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: process.env.VITE_BASE ?? "/timberhack-foundations/",
+  // Domínio próprio (timberhack.co) serve o site na raiz.
+  base: process.env.VITE_BASE ?? "/",
   server: {
     host: "::",
     port: 8080,
