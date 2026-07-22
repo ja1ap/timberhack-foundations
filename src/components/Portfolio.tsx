@@ -229,12 +229,19 @@ const Portfolio = () => {
               <X className="h-4 w-4" />
             </button>
 
-            <div className="relative h-72 md:h-80 bg-muted overflow-hidden shrink-0">
+            <div className="relative h-[42vh] min-h-[18rem] max-h-[28rem] bg-muted overflow-hidden shrink-0">
+              <img
+                key={`fundo-${currentImage}`}
+                src={currentImage}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover blur-2xl scale-110 brightness-75"
+              />
               <img
                 key={currentImage}
                 src={currentImage}
                 alt={`${active.name} — foto ${slide + 1}`}
-                className="w-full h-full object-cover animate-fade-in"
+                className="relative w-full h-full object-contain animate-fade-in"
               />
 
               {hasGallery && (
