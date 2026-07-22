@@ -82,7 +82,7 @@ const Contact = () => {
         return;
       }
 
-      toast.success("Mensagem enviada. Retornaremos em até 1 dia útil.");
+      toast.success("Mensagem enviada.");
       form.reset();
     } catch {
       toast.error(

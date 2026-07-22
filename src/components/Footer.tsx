@@ -44,6 +44,8 @@ const Footer = () => (
             Contato
           </div>
           <ul className="space-y-2 text-sm">
+            {/* Quando o WhatsApp for ativado, virar link wa.me/5511940453613 */}
+            <li>+55 (11) 94045-3613</li>
             <li>São Paulo, Brasil</li>
           </ul>
         </div>
