@@ -15,7 +15,7 @@ const stats = [
   },
   {
     icon: Shield,
-    metric: "1:5",
+    metric: "1:4",
     title: "Resistência/peso",
     desc: "Madeira engenheirada oferece desempenho estrutural superior com cargas próprias menores.",
   },

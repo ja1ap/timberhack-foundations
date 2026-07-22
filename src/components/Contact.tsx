@@ -6,7 +6,6 @@ import { toast } from "sonner";
 
 const CONTACT_EMAIL = "murilo.negreli@gmail.com";
 const FORMSUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
-const MESSAGE_MIN_LENGTH = 10;
 
 const schema = z.object({
   name: z.string().trim().min(2, "Informe seu nome").max(100),
@@ -16,10 +15,7 @@ const schema = z.object({
   message: z
     .string()
     .trim()
-    .min(
-      MESSAGE_MIN_LENGTH,
-      `Conte um pouco mais sobre o projeto, com pelo menos ${MESSAGE_MIN_LENGTH} caracteres`,
-    )
+    .min(1, "Conte um pouco sobre o projeto")
     .max(1000),
 });
 
@@ -109,8 +105,7 @@ const Contact = () => {
               Vamos projetar a próxima estrutura.
             </h2>
             <p className="mt-6 text-base text-muted-foreground">
-              Conte sobre seu projeto. Respondemos em até 1 dia útil com uma
-              avaliação técnica preliminar.
+              Conte sobre seu projeto.
             </p>
 
             <div className="mt-10 space-y-5">
@@ -218,23 +213,16 @@ const Contact = () => {
 
             <div className="mt-5">
               <label className="text-xs font-semibold text-foreground mb-2 block">
-                Mensagem *{" "}
-                <span className="font-normal text-muted-foreground">
-                  (mín. {MESSAGE_MIN_LENGTH} caracteres)
-                </span>
+                Mensagem *
               </label>
               <textarea
                 name="message"
                 required
-                minLength={MESSAGE_MIN_LENGTH}
                 rows={5}
                 maxLength={1000}
                 className="w-full px-4 py-3 rounded-xl border border-input bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition resize-none"
                 placeholder="Conte sobre área, tipologia, prazos e objetivos do projeto..."
               />
-              <p className="mt-2 text-xs text-muted-foreground">
-                Informe pelo menos {MESSAGE_MIN_LENGTH} caracteres para enviar.
-              </p>
             </div>
 
             <button

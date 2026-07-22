@@ -9,8 +9,7 @@ const Footer = () => (
         <div className="md:col-span-2">
           <Logo className="h-8 w-auto mb-6" />
           <p className="text-sm max-w-sm text-white/60 leading-relaxed">
-            Engenharia estrutural especializada em madeira engenheirada - CLT,
-            glulam e sistemas híbridos para uma construção de baixo carbono.
+            Engenharia estrutural especializada em madeira.
           </p>
         </div>
         <div>
@@ -54,7 +53,6 @@ const Footer = () => (
           © {new Date().getFullYear()} Timberhack - Engenharia em madeira
           estrutural.
         </div>
-        <div>CREA · ABNT NBR 7190 1:2022 · Eurocode 5</div>
       </div>
     </div>
   </footer>
