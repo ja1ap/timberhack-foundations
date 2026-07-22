@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MapPin, Send } from "lucide-react";
 import WhatsAppIcon from "./WhatsAppIcon";
+import { WHATSAPP_DISPLAY, whatsappLink } from "@/lib/whatsapp";
 import { z } from "zod";
 import { toast } from "sonner";
 
@@ -111,16 +112,20 @@ const Contact = () => {
             </p>
 
             <div className="mt-10 space-y-5">
-              {/* Número definitivo; quando o WhatsApp for ativado, transformar em link wa.me/5511940453613 */}
-              <div className="flex items-center gap-4">
-                <div className="h-11 w-11 rounded-xl bg-accent text-primary flex items-center justify-center">
+              <a
+                href={whatsappLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 group"
+              >
+                <div className="h-11 w-11 rounded-xl bg-accent text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                   <WhatsAppIcon className="h-4 w-4" />
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground">WhatsApp</div>
-                  <div className="font-medium">+55 (11) 94045-3613</div>
+                  <div className="font-medium">{WHATSAPP_DISPLAY}</div>
                 </div>
-              </div>
+              </a>
               <div className="flex items-center gap-4">
                 <div className="h-11 w-11 rounded-xl bg-accent text-primary flex items-center justify-center">
                   <MapPin className="h-4 w-4" />

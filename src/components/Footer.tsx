@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import { WHATSAPP_DISPLAY, whatsappLink } from "@/lib/whatsapp";
 
 const base = import.meta.env.BASE_URL;
 
@@ -44,8 +45,16 @@ const Footer = () => (
             Contato
           </div>
           <ul className="space-y-2 text-sm">
-            {/* Quando o WhatsApp for ativado, virar link wa.me/5511940453613 */}
-            <li>+55 (11) 94045-3613</li>
+            <li>
+              <a
+                href={whatsappLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                {WHATSAPP_DISPLAY}
+              </a>
+            </li>
             <li>São Paulo, Brasil</li>
           </ul>
         </div>
